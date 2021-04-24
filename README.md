@@ -1,4 +1,6 @@
-#Kubernetes-Wordpress-using-Helm
+# Kubernetes-Wordpress-using-Helm
+
+![image](https://user-images.githubusercontent.com/69296850/115973105-49eb2700-a570-11eb-9800-10aab650edc1.png)
 
 ## 3 step Helm Installation:
 * $ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
