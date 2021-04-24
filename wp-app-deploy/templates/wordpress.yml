@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: {{ .Values.wordpress }}
+  name: {{ .Values.wordpress }}
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: {{ .Values.wordpress }}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: {{ .Values.wordpress }}
+      name: {{ .Values.wordpress }}
+    spec:    
+      containers:
+      - image: {{ .Values.wordpress_image }}
+        name: {{ .Values.wordpress }}
+        resources: {}
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+status: {}
